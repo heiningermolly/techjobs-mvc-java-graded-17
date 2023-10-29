@@ -12,20 +12,8 @@
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
 
-<!--  //for each job in jobs, do a <tr></tr>-->
-<!--  //within that, the identifying value needs to be in a <th></th>-->
-<!--  //and then after that the value needs to be in a <td></td>-->
-
   <table th:each="job : ${jobs}" class="job-listing">
-<!--    <tr th:each="item : ${job}">-->
-<!--      <td th:text="${item}"></td>-->
-<!--      <td>keep trying molly!</td>-->
-<!--    </tr>-->
 
-<!--    trying to use an example from another part of the code.......
-<li th:each="item : ${category.value}">-->
-<!--      <a th:href="@{/list/jobs(column=${category.key},value=${item})}" th:text="${item}"></a>-->
-<!--    </li>-->
 
     <tr>
       <td>ID</td>
@@ -50,6 +38,7 @@
     <tr>
       <td>Core Competency</td>
       <td th:text="${job.coreCompetency}"></td>
+    </tr>
 
   <br /></table>
 
